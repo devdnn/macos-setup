@@ -31,19 +31,7 @@ curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/homebr
 
 curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/macos-install.sh | sh
 
-# SSH config
-stow ssh -d $DOTFILES_FOLDER -t $HOME
-
-# stow bash -t $HOME
-rm $HOME/.zshrc
-stow zsh --d $DOTFILES_FOLDER -t $HOME
-
-# stow vscode -t $HOME
-# ln -s "$HOME/work/git/stow-dotfiles/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
-
-# git
-stow git -d $DOTFILES_FOLDER -t $HOME
-git config --global core.excludesfile $HOME/.gitignore
+. run-stow.sh
 
 # Node.js setup
 nvm install
