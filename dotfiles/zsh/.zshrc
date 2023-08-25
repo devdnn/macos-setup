@@ -42,6 +42,7 @@ export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --pad
 # PATH
 # export PATH=${PATH}:/usr/local/go/bin
 # export PATH=${PATH}:${HOME}/go/bin
+export PATH=$PATH:${HOME}/homebrew/bin
 
 export BAT_THEME="gruvbox-dark"
 
