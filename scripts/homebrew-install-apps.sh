@@ -33,6 +33,7 @@ brew install pandoc
 brew install python@3.8
 # brew install rtmpdump
 brew install sphinx-doc
+brew install stow
 # brew install subversion
 brew install telnet
 brew install watch

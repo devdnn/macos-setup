@@ -9,13 +9,13 @@ mkdir -p $HOME/work/_code/git
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-curl -L https://github.com/devdnn/macos-setup/main/scripts/core-fonts.sh | sh
+curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/core-fonts.sh | sh
 
-curl -L https://github.com/devdnn/macos-setup/main/scripts/core-install.sh | sh
+curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/core-install.sh | sh
 
-curl -L https://github.com/devdnn/macos-setup/main/scripts/homebrew-install-apps.sh | sh
+curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/homebrew-install-apps.sh | sh
 
-curl -L https://github.com/devdnn/macos-setup/main/scripts/macos-install.sh | sh
+curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/macos-install.sh | sh
 
 # SSH config
 stow ssh -d /dotfiles/ssh -t $HOME/
