@@ -4,8 +4,24 @@ touch $HOME/.hushlogin
 # Show hidden files in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
+is_executable() {
+  type "$1" > /dev/null 2>&1
+}
+
 # Basic file system setup
 mkdir -p $HOME/work/_code/git
+
+SOURCE="https://github.com/devdnn/macos-setup"
+SOURCECODE_LOCATION="$HOME/work/_code/git"
+TARBALL="$SOURCE/tarball/main"
+TARGET="$HOME/.dotfiles"
+
+if is_executable "git"; then
+  CMD="git clone $SOURCE $SOURCECODE_LOCATION"
+  cp -r $SOURCECODE_LOCATION/macos-setup/dotfiles $HOME/.dotfiles
+fi
+
+
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -17,18 +33,20 @@ curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/homebr
 
 curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/macos-install.sh | sh
 
+
+
 # SSH config
-stow ssh -d /dotfiles/ssh -t $HOME/
+stow ssh -d $TARGET -t $HOME
 
 # stow bash -t $HOME
 rm $HOME/.zshrc
-stow zsh -d /dotfiles/zsh -t $HOME
+stow zsh --d $TARGET -t $HOME
 
 # stow vscode -t $HOME
 # ln -s "$HOME/work/git/stow-dotfiles/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 
 # git
-stow git -t $HOME/
+stow git -d $TARGET -t $HOME
 git config --global core.excludesfile $HOME/.gitignore
 
 # Node.js setup
