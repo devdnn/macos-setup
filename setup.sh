@@ -21,7 +21,7 @@ if is_executable "git"; then
   eval $CMD
 fi
 
-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/core-fonts.sh | sh
 
