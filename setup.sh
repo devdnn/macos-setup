@@ -31,7 +31,17 @@ curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/homebr
 
 curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/macos-install.sh | sh
 
+curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/scripted-installs.sh | sh
+
 . run-stow.sh
+
+mkdir ~/.nvm
+
+curl -L https://raw.githubusercontent.com/devdnn/macos-setup/main/scripts/node-install.sh | sh
+
+brew doctor
+brew update
+brew cleanup
 
 # Node.js setup
 nvm install
