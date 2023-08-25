@@ -5,32 +5,24 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# core environment
+[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
+## console setup... NVM, OMZ [shell] & Spaceship [prompt]
+[[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
+[[ -f ~/.zsh/ohmyzsh.zsh ]] && source ~/.zsh/ohmyzsh.zsh
+[[ -f ~/.zsh/spaceship.zsh ]] && source ~/.zsh/spaceship.zsh
+
+# completions
+[[ -f ~/.zsh/az-cli-completions.zsh ]] && source ~/.zsh/az-cli-completions.zsh
+[[ -f ~/.zsh/bash-completions.zsh ]] && source ~/.zsh/bash-completions.zsh
+[[ -f ~/.zsh/zsh-completions.zsh ]] && source ~/.zsh/zsh-completions.zsh
+
 # Export nvm completion settings for lukechilds/zsh-nvm plugin
 # Note: This must be exported before the plugin is bundled
 export NVM_DIR=${HOME}/.nvm
 export NVM_COMPLETION=true
 
 source ${HOME}/.zsh_plugins.sh
-
-# Bundle zsh plugins via antibody
-alias update-antibody='antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh'
-# List out all globally installed npm packages
-alias list-npm-globals='npm list -g --depth=0'
-# Adds better handling for `rm` using trash-cli
-# https://github.com/sindresorhus/trash-cli
-# You can empty the trash using the empty-trash command
-# https://github.com/sindresorhus/empty-trash-cli
-alias rm='trash'
-# use neovim instead of vim
-alias vim='nvim'
-# checkout branch using fzf
-alias gcob='git branch | fzf | xargs git checkout'
-# open vim config from anywhere
-alias vimrc='vim ${HOME}/.config/nvim/init.vim'
-# cat -> bat
-alias cat='bat'
-# colored ls output
-alias ls='ls -al --color'
 
 # DIRCOLORS (MacOS)
 export CLICOLOR=1
@@ -43,11 +35,6 @@ export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --pad
 # export PATH=${PATH}:/usr/local/go/bin
 # export PATH=${PATH}:${HOME}/go/bin
 export PATH=$PATH:${HOME}/homebrew/bin
-
-export BAT_THEME="gruvbox-dark"
-
-# nix
-if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
