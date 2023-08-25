@@ -32,7 +32,7 @@ done < "./brew.txt"
 # SSH config
 stow ssh -t $HOME/
 
-stow bash -t $HOME
+# stow bash -t $HOME
 rm $HOME/.zshrc
 stow zsh -t $HOME
 
