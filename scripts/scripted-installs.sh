@@ -8,13 +8,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # install fonts
 cd ~/Library/Fonts
 mkdir "Segoe UI MDL2" && cd $_
-curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe UI MDL2/Segoe UI Bold Italic.ttf"
-curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe UI MDL2/Segoe UI Bold.ttf"
-curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe UI MDL2/Segoe UI Italic.ttf"
-curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe UI MDL2/Segoe UI Regular.ttf"
-curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe UI MDL2/Segoe UI Semibold.ttf"
-curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe UI MDL2/Segoe UI Semilight.ttf"
-curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe UI MDL2/Segoe UI.ttf"
+curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe%20UI%20MDL2/Segoe%20UI%20Bold%20Italic.ttf"
+curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe%20UI%20MDL2/Segoe%20UI%20Bold.ttf"
+curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe%20UI%20MDL2/Segoe%20UI%20Italic.ttf"
+curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe%20UI%20MDL2/Segoe%20UI%20Regular.ttf"
+curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe%20UI%20MDL2/Segoe%20UI%20Semibold.ttf"
+curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe%20UI%20MDL2/Segoe%20UI%20Semilight.ttf"
+curl -O "https://raw.githubusercontent.com/devdnn/macos-setup/main/fonts/Segoe%20UI%20MDL2/Segoe%20UI.ttf"
 
 cd ~/Library/Fonts
 mkdir "Omnes" && cd $_
