@@ -1,0 +1,37 @@
+alfred
+# audio-hijack
+azure-data-studio
+bartender
+bitbar
+bot-framework-emulator
+# discord
+docker
+dotnet-sdk
+drawio
+firefox
+# forecast
+# google-chrome
+grammarly
+# handbrake
+# home-assistant
+istat-menus
+# java
+loopback
+maccy
+microsoft-azure-storage-explorer
+microsoft-edge
+microsoft-teams # may not install on Apple Silicon
+ngrok
+nosleep
+notion
+obs
+parallels
+postman
+powershell
+screenflow
+smartsynchronize
+tripmode
+visual-studio-code
+wireshark
+xmind
+zxpinstaller

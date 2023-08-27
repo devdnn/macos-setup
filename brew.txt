@@ -1,0 +1,42 @@
+#!/bin/sh
+# install apps
+act
+asciinema
+asdf
+azure-cli
+bfg
+carthage
+cask
+#dropbox
+#esptool
+ffmpeg
+gh
+ghostscript
+git
+#go
+#gobject-introspection
+gzip
+highlight
+#hugo
+jq
+jsdoc3
+#libdvdcss
+markdownlint-cli
+mas
+meson
+mono
+# nasm
+openssl@3
+pandoc
+# protobuf
+python@3.8
+# rtmpdump
+sphinx-doc
+stow
+# subversion
+telnet
+watch
+watchman
+yarn
+# youtube-dl
+yq
