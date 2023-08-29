@@ -16,7 +16,7 @@ antigen bundles <<EOBUNDLES
 	zsh-users/zsh-completions
 	zsh-users/zsh-autosuggestions
   	unixorn/autoupdate-antigen.zshplugin
-	zsh-syntax-highlighting/zsh-syntax-highlighting
+	zsh-users/zsh-syntax-highlighting
 EOBUNDLES
 
 # Load the theme @ https://github.com/robbyrussell/oh-my-zsh/tree/master/themes/

@@ -16,4 +16,5 @@ export SPACESHIP_PROMPT_ASYNC=FALSE
 # NVM directory
 export NVM_DIR="$HOME/.nvm"
 
-export EDITOR='code'
+export EDITOR='code -n'
+export PAGER='less -f'
