@@ -1,37 +1,42 @@
-alfred
-# audio-hijack
-azure-data-studio
-bartender
-bitbar
-bot-framework-emulator
-# discord
-docker
-dotnet-sdk
-drawio
-firefox
-# forecast
-# google-chrome
-grammarly
-# handbrake
-# home-assistant
-istat-menus
-# java
-loopback
-maccy
-microsoft-azure-storage-explorer
-microsoft-edge
-microsoft-teams # may not install on Apple Silicon
-ngrok
-nosleep
-notion
-obs
-parallels
-postman
-powershell
-screenflow
-smartsynchronize
-tripmode
-visual-studio-code
-wireshark
-xmind
-zxpinstaller
+brew install openssl@3
+brew install pandoc
+brew install python@3.8
+brew install sphinx-doc
+brew install stow
+brew install telnet
+brew install watch
+brew install watchman
+brew install yarn
+brew install yq
+
+
+
+brew install --cask alfred
+brew install --cask azure-data-studio
+brew install --cask bartender
+brew install --cask bitbar
+brew install --cask bot-framework-emulator
+brew install --cask docker
+brew install --cask dotnet-sdk
+brew install --cask drawio
+brew install --cask firefox
+brew install --cask grammarly
+brew install --cask istat-menus
+brew install --cask loopback
+brew install --cask maccy
+brew install --cask microsoft-azure-storage-explorer
+brew install --cask microsoft-edge
+brew install --cask microsoft-teams # may not install on Apple Silicon
+brew install --cask ngrok
+brew install --cask nosleep
+brew install --cask notion
+brew install --cask obs
+brew install --cask parallels
+brew install --cask postman
+brew install --cask powershell
+brew install --cask screenflow
+brew install --cask smartsynchronize
+brew install --cask tripmode
+brew install --cask visual-studio-code
+brew install --cask xmind
+brew install --cask zxpinstaller

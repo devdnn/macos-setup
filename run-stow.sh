@@ -1,18 +1,27 @@
+#!/bin/sh
 
-SOURCE="https://github.com/devdnn/macos-setup"
-TARGET="$HOME/.macos-setup"
-DOTFILES_FOLDER="$TARGET/dotfiles"
+DOTFILES_FOLDER="./dotfiles/"
+TARGET_FOLDER="$HOME/.dotfiles/"
+
+# copy dotfiles folder content to home directory with .dotfiles folder name and delete files that are not in source
+cp -r "$DOTFILES_FOLDER" "$TARGET_FOLDER"
+
+# remove those files that are not in the TARGET_FOLDER folder
+
+
+
+cp -r "$DOTFILES_FOLDER" "$TARGET_FOLDER"
 
 # SSH config
-stow ssh -d $DOTFILES_FOLDER -t $HOME --ignore
+stow ssh -R -d "$TARGET_FOLDER" -t "$HOME"
 
 # stow bash -t $HOME
-rm $HOME/.zshrc
-stow zsh --d $DOTFILES_FOLDER -t $HOME --ignore
+rm "$HOME"/.zshrc
+stow zsh -R --d "$TARGET_FOLDER" -t "$HOME"
 
 # stow vscode -t $HOME
 # ln -s "$HOME/work/git/stow-dotfiles/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 
 # git
-stow git -d $DOTFILES_FOLDER -t $HOME --ignore
-git config --global core.excludesfile $HOME/.gitignore
+stow git -R -d "$TARGET_FOLDER" -t "$HOME"
+git config --global core.excludesfile "$HOME/.gitignore"

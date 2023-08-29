@@ -1,9 +1,11 @@
 # added locations to path variable
-export PATH=$PATH:/Users/0328219/bin
+export PATH=$PATH:${HOME}/bin
 export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:${HOME}/homebrew/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export HOMEBRREW_DIR="$HOME/homebrew"
 
 # Starship prompt configuration
 # export SPACESHIP_CONFIG="$HOME/.spaceshiprc.zsh"

@@ -1,0 +1,4 @@
+.history/
+*.vsix
+.history
+.ionide

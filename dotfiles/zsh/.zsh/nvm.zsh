@@ -1,4 +1,5 @@
+export NVM_DIR="$HOME/.nvm"
 # This loads nvm
-[ -s ${HOME}"/homebrew/opt/nvm/nvm.sh" ] && \. ${HOME}"/homebrew/opt/nvm/nvm.sh"
+  [ -s ${HOME}"/.nvm/nvm.sh" ] && \. ${HOME}"/.nvm/nvm.sh"  # This loads nvm
 # This loads nvm bash_completion
-[ -s ${HOME}"/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. ${HOME}"/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+  [ -s ${HOME}"/.nvm/etc/bash_completion.d/nvm" ] && \. ${HOME}"/.nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

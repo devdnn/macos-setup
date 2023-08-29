@@ -57,6 +57,7 @@ brew install --cask firefox
 # brew install --cask forecast
 # brew install --cask google-chrome
 brew install --cask grammarly
+brew install --cask gitkraken
 # brew install --cask handbrake
 # brew install --cask home-assistant
 brew install --cask istat-menus
