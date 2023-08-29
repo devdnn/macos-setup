@@ -47,6 +47,7 @@ brew install --cask alfred
 # brew install --cask audio-hijack
 brew install --cask azure-data-studio
 brew install --cask bartender
+brew install --cask beyond-compare
 brew install --cask bitbar
 brew install --cask bot-framework-emulator
 # brew install --cask discord

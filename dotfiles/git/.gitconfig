@@ -7,7 +7,7 @@
 	editor = code -w
 	excludesfile = ~/.gitignore_global
 [merge]
-	tool = code
+	tool = bc
 	ff = no
 	commit = no
 [fetch]
@@ -60,3 +60,7 @@
 	stl = ls-files -m -o --exclude-standard
 	sts = status -sb
 	unstage = reset --hard HEAD
+[diff]
+	tool = bc
+[mergetool "bc"]
+	trustExitCode = true
