@@ -25,3 +25,7 @@ stow zsh -R --d "$TARGET_FOLDER" -t "$HOME"
 # git
 stow git -R -d "$TARGET_FOLDER" -t "$HOME"
 git config --global core.excludesfile "$HOME/.gitignore"
+
+# stow hyper -t $HOME
+rm "$HOME"/.hyper.js
+stow hyper -R --d "$TARGET_FOLDER" -t "$HOME"

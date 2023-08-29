@@ -22,7 +22,7 @@ fi
 export NVM_DIR=${HOME}/.nvm
 export NVM_COMPLETION=true
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 source ${HOME}/.zsh_plugins.sh
 
 # DIRCOLORS (MacOS)
