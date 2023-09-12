@@ -32,3 +32,10 @@ antigen bundle zsh-users/zsh-history-substring-search
 
 # Tell antigen that you're done
 antigen apply
+
+if type brew &>/dev/null; then
+	FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+	autoload -Uz compinit
+	compinit
+fi

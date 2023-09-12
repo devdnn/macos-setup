@@ -101,3 +101,7 @@ brew install esolitos/ipa/sshpass
 
 # add cask-drivers
 brew tap homebrew/cask-drivers
+
+# visual studio and taps for it
+brew tap homebrew/cask-versions
+brew install --cask visual-studio
