@@ -41,3 +41,8 @@ export PATH=$PATH:${HOME}/homebrew/bin
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(starship init zsh)"
+
+
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi

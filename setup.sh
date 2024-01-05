@@ -1,6 +1,7 @@
+#!/bin/sh
 # MacOS System
 # Remove Message of the day prompt
-touch $HOME/.hushlogin
+touch "$HOME"/.hushlogin
 # Show hidden files in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
@@ -13,12 +14,12 @@ TARGET="$HOME/.macos-setup"
 DOTFILES_FOLDER="$TARGET/dotfiles"
 
 # Basic file system setup
-rm -rf $TARGET
-mkdir -p $TARGET
+rm -rf "$TARGET"
+mkdir -p "$TARGET"
 
 if is_executable "git"; then
   CMD="git clone $SOURCE $TARGET"
-  eval $CMD
+  eval "$CMD"
 fi
 
 #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -53,4 +54,4 @@ sudo gem install bropages
 # TODO: CLI tool for installing things from app store
 # https://github.com/herrbischoff/awesome-osx-command-line
 
-cp $DOTFILES_FOLDER/p10k/.p10k.zsh $HOME
+cp "$DOTFILES_FOLDER"/p10k/.p10k.zsh "$HOME"
