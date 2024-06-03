@@ -26,6 +26,7 @@ brew install markdownlint-cli
 brew install mas
 brew install meson
 brew install mono
+brew install oh-my-posh
 # brew install nasm
 brew install openssl@3
 brew install pandoc
@@ -105,3 +106,6 @@ brew tap homebrew/cask-drivers
 # visual studio and taps for it
 brew tap homebrew/cask-versions
 brew install --cask visual-studio
+
+brew tap homebrew/cask-fonts                     # You only need to do this once!
+brew search nerd-font                            # Search for font packages

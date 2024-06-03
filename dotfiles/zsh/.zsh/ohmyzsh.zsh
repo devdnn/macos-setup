@@ -27,7 +27,7 @@ antigen theme steeef
 # antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 
 # syntax highlighting must come below the bundle to set the correct paths/variables with history search
-antigen bundle zdharma/fast-syntax-highlighting
+# antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 
 # Tell antigen that you're done

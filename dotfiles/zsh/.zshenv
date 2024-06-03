@@ -18,3 +18,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export EDITOR='code -n'
 export PAGER='less -f'
+
+export SPACESHIP_CONFIG="$HOME/.config/spaceship/spaceship.zsh"

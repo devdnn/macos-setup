@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 DOTFILES_FOLDER="./dotfiles/"
 TARGET_FOLDER="$HOME/.dotfiles/"
@@ -29,3 +29,7 @@ git config --global core.excludesfile "$HOME/.gitignore"
 # stow hyper -t $HOME
 rm "$HOME"/.hyper.js
 stow hyper -R --d "$TARGET_FOLDER" -t "$HOME"
+
+# stow starship
+rm "$HOME"/.config/spaceship.zsh
+stow spaceship -R --d "$TARGET_FOLDER" -t "$HOME"

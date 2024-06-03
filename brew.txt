@@ -28,3 +28,4 @@ watch
 watchman
 yarn
 yq
+oh-my-posh

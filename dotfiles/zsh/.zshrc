@@ -22,7 +22,7 @@ fi
 export NVM_DIR=${HOME}/.nvm
 export NVM_COMPLETION=true
 
-ZSH_THEME="random"
+ZSH_THEME="spaceship"
 source ${HOME}/.zsh_plugins.sh
 
 # DIRCOLORS (MacOS)
@@ -41,7 +41,6 @@ export PATH=$PATH:${HOME}/homebrew/bin
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(starship init zsh)"
-
 
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
